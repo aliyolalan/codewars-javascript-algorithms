@@ -5,18 +5,19 @@ const randomNumberGenerator = (length, maximum, minimum) => {
     randomizedNumberArr.push(randomGenerate);
   }
   return randomizedNumberArr.join('');
-}
+};
+
 const ascendDescendRepeat = (lengthValue, minimum, maximum) => {
   const tempArr = [];
   let index = minimum;
   while (index <= maximum) {
     const maxValueInArr = Math.max(...tempArr);
     if (tempArr.length === lengthValue) {
-      break
+      break;
     }
     tempArr.push(index++);
   }
-  return tempArr
-}
+  return tempArr;
+};
 
-console.log(ascendDescendRepeat( 5, 1, 3));
+console.log(ascendDescendRepeat(5, 1, 3));
