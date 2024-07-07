@@ -3,7 +3,7 @@ const findFactors = (inputNumber) => {
   let resultArr = []
   let resultValue
 
-  if (inputNumber <= 0 || typeof inputNumber !== "number") {
+  if (inputNumber <= 0 || typeof inputNumber !== "number") {
     return -1
   }
 
